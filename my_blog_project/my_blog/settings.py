@@ -77,8 +77,13 @@ WSGI_APPLICATION = 'my_blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'myawesomeblogdb',
+        'USER': 'postgres',
+        'PASSWORD': 'blog1234',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+
     }
 }
 
